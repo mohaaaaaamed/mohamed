@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    background-color: white;
+    width: 30%;
+    height: 18vw;
+    border-radius: 14px;
+    transition: all 0.5s linear
+}
+
+.h1 {
+    font-size: 1.8rem;
+    color: rgb(249, 149, 166);
+}
+
+.el_container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 7px;
+    background-color: pink;
+    transition: transform 0.3s;
+    color: white;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: rgb(249, 149, 166);
+}
+
+@media screen and (max-width:1180px) {
+    .h1 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
